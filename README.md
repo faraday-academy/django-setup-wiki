@@ -23,10 +23,24 @@ Instructions for setting up Django projects.
 1. Create a folder named `apps`
 1. Create a `users` app: `mkdir apps/users` and then `python manage.py startapp users apps/users`
 1. Setup custom User model and custom user manager: https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
-
 ```py
 AUTH_USER_MODEL = 'users.User'
 ```
+
+1. Set up admin interface for User model:
+```py
+from django.contrib import admin
+from .models import User
+
+
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('email', 'is_admin')
+
+
+admin.site.register(User, UserAdmin
+```
+
+### Part 2
 
 1. Setup Postgres in Django settings.py file:
 ```
