@@ -8,6 +8,7 @@ Instructions for setting up Django projects.
 
 - Django 3.x
 - [Poetry](https://python-poetry.org/docs/cli/#install)
+- Postgres
 
 ### Initial Setup
 
@@ -16,6 +17,7 @@ Instructions for setting up Django projects.
 1. Create a virtual environment: `python -m venv venv`
 1. Go into your virtual environment: `source venv/bin/activate`
 1. Rename the [projectname] folder to config
+1. Install `djangorestframework` and `psycopg2`
 1. Setup Postgres in Django:
 
 ```
