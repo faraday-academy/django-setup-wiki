@@ -65,9 +65,10 @@ admin.site.register(User, UserAdmin
 1. Run the app: `python manage.py runserver`
 1. View the API at `localhost:8000` and the admin interface at `localhost:8000/admin`
 
-### Part 2
+### Apps Setup
 
 1. Create apps
+1. Create `urls.py` file
 1. Setup URLs
 1. Setup templates for home page: `'DIRS': [os.path.join(BASE_DIR, 'apps/templates')]`
 1. Create Models
@@ -75,7 +76,7 @@ admin.site.register(User, UserAdmin
 1. Setup Views
 1. Setup token auth
 
-### Part 3 - Optional
+### Optional Setup
 
 1. Setup nested routes: `rest_framework_nested`
 1. Pagination
