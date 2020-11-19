@@ -31,6 +31,8 @@ Instructions for setting up Django projects.
 }
 ```
 
+1. Create a folder named `apps`
+1. Create a `users` app: `mkdir apps/users` and then `python manage.py startapp users apps/users`
 1. Setup custom User model and custom user manager: https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
 
 ```py
