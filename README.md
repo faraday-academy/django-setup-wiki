@@ -4,6 +4,11 @@ Instructions for setting up Django projects.
 
 ## Django REST Framework
 
+### Technologies
+
+- Django 3.x
+- [Poetry](https://python-poetry.org/docs/cli/#install)
+
 ### Initial Setup
 
 1. Must have Python 3 & Postgres version 12.x installed and running
