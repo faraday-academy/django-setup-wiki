@@ -4,9 +4,14 @@ Instructions for setting up Django projects.
 
 **Table of Contents**
 
+1. [General Setup for all Django Projects](#general-setup-for-all-django-projects)
 1. [Django REST Framework](#django-rest-framework)
 1. [Django GraphQL](#django-graphql)
 1. [Full-Stack Django](#full-stack-django) (with templates)
+
+## General Setup for all Django Projects
+
+**coming soon...**
 
 ## Django REST Framework
 
