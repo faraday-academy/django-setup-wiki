@@ -11,6 +11,8 @@ Instructions for setting up Django projects.
 
 ## General Setup for all Django Projects
 
+### Recommended Technologies
+
 **coming soon...**
 
 ## Django REST Framework
