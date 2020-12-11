@@ -2,17 +2,25 @@
 
 Instructions for setting up Django projects.
 
+**Table of Contents**
+
+1. [Django REST Framework](#django-rest-framework)
+1. [Django GraphQL](#django-graphql)
+1. [Full-Stack Django](#full-stack-django) (with templates)
+
 ## Django REST Framework
 
 ### Technologies
 
 - Django 3.x
+- Django REST Framework
 - [Poetry](https://python-poetry.org/docs/cli/#install)
 - Postgres
 
 ### Initial Setup
 
-1. Must have Python 3 & Postgres version 12.x installed and running
+1. Must have Python 3, [Django]((https://docs.djangoproject.com/en/3.1/topics/install)), and Postgres version 12.x installed
+1. Make sure Postgres is running on your machine
 1. `django-admin startproject [projectname]`
 1. Create a virtual environment: `python -m venv venv`
 1. Go into your virtual environment: `source venv/bin/activate`
@@ -87,3 +95,11 @@ admin.site.register(User, UserAdmin
 1. Setup nested routes: `rest_framework_nested`
 1. Pagination
 1. Timestamp util for models
+
+## Django Graphql
+
+**coming soon...**
+
+## Full-Stack Django
+
+**coming soon...**
