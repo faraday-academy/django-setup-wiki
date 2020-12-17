@@ -111,7 +111,12 @@ This builds off of the general Django setup steps.
 
 ## Django Graphql
 
-**coming soon...**
+### Technologies
+
+- [Django Graphene](https://github.com/graphql-python/graphene-django)
+- [Django GraphQL JWT](https://github.com/flavors/django-graphql-jwt)
+- [Graphiql](https://github.com/graphql/graphiql)
+- [Postman](https://www.postman.com/graphql)
 
 ## Full-Stack Django
 
