@@ -13,14 +13,7 @@ Instructions for setting up Django projects.
 
 ### Recommended Technologies
 
-**coming soon...**
-
-## Django REST Framework
-
-### Technologies
-
 - Django 3.x
-- Django REST Framework
 - [Poetry](https://python-poetry.org/docs/cli/#install)
 - Postgres
 
@@ -61,6 +54,8 @@ admin.site.register(User, UserAdmin
 
 ### Database Setup
 
+*Postgres is optional, but recommended in the official Django docs.*
+
 1. Setup Postgres in Django settings.py file:
 ```
 'default': {
@@ -81,11 +76,22 @@ admin.site.register(User, UserAdmin
 ### More Setup
 
 1. Create an admin user for logging into the Django admin interface: `python manage.py createsuperuser`
+1. Run the app: `python manage.py runserver`
+1. View the API at `localhost:8000` and the admin interface at `localhost:8000/admin`
+
+## Django REST Framework
+
+This builds off of the general Django setup steps.
+
+### Technologies
+
+- Django REST Framework
+    
+### REST Framework Setup
+
 1. Set up Django REST Framework
     1. Add DRF to `INSTALLED_APPS`: `'rest_framework'`
     1. Add DRF URLs to urlpatterns: `path('', include('rest_framework.urls')),`
-1. Run the app: `python manage.py runserver`
-1. View the API at `localhost:8000` and the admin interface at `localhost:8000/admin`
 
 ### Apps Setup
 
