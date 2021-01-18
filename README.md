@@ -7,6 +7,7 @@ Instructions for setting up Django projects.
 1. [General Setup for all Django Projects](#general-setup-for-all-django-projects)
 1. [Django REST Framework](#django-rest-framework)
 1. [Django GraphQL](#django-graphql)
+1. [Django MongoDB](#django-mongodb)
 1. [Full-Stack Django](#full-stack-django) (with templates)
 
 ## General Setup for all Django Projects
@@ -117,6 +118,13 @@ This builds off of the general Django setup steps.
 - [Django GraphQL JWT](https://github.com/flavors/django-graphql-jwt)
 - [Graphiql](https://github.com/graphql/graphiql)
 - [Postman](https://www.postman.com/graphql)
+
+## Django MongoDB
+
+### Technologies
+
+- MongoDB (Running locally)
+- [Djongo](https://www.djongomapper.com/get-started)
 
 ## Full-Stack Django
 
