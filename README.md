@@ -16,7 +16,7 @@ Instructions for setting up Django projects.
 
 - Django 3.x
 - [Poetry](https://python-poetry.org/docs/cli/#install)
-- Postgres
+- Postgres: You can use MySQL or SQL Lite, but Postgres is recommended by the Django official docs. The only exception is if you want to use MongoDB or another NoSQL database with your project. You can find [details for that below](#django-mongodb).
 
 ### Initial Setup
 
@@ -25,8 +25,8 @@ Instructions for setting up Django projects.
 1. `django-admin startproject [projectname]`
 1. Create a virtual environment: `python -m venv venv`
 1. Go into your virtual environment: `source venv/bin/activate`
-1. `poetry init`
-1. Install `djangorestframework` and `psycopg2-binary`: `poetry add djangorestframework psycopg2`
+1. Run `poetry init` -> This will create a TOML file for you with your project config where Poetry will add your dependencies
+1. Install `psycopg2-binary`: `poetry add psycopg2`
 1. Rename the [projectname] folder to config
 
 1. Create a folder named `apps`
@@ -90,9 +90,12 @@ This builds off of the general Django setup steps.
     
 ### REST Framework Setup
 
+1. Install the REST Framework with Poetry: `poetry add djangorestframework`
 1. Set up Django REST Framework
     1. Add DRF to `INSTALLED_APPS`: `'rest_framework'`
     1. Add DRF URLs to urlpatterns: `path('', include('rest_framework.urls')),`
+1. You can run the Django app normally: `python manage.py runserver`
+1. Now go to localhost:8000 in your browser and you should see Django REST frameworks default page showing you all the routes you have available to you.
 
 ### Apps Setup
 
