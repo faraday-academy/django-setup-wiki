@@ -58,17 +58,25 @@ schema = graphene.Schema(query=Query)
 
 ---
 
-> The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe.
->
->> No pressure. Just relax and watch it happen.
+| Light Color | Current State | Next State |
+| :------- | :------- | :------ |
+| Green | Green | Yellow |
+| Yellow | Yellow | Red |
 
--- *Bob Ross*
+<details>
+<summary>Section Header</summary>
 
-[![Poll Mockup](./Poll_Page.png)](https://docs.graphene-python.org/projects/django/en/latest/)
+Section body text.
 
-Some text <br>some more text
+- hello
+- test
 
-## Roadmap
+</details>
 
-- [x] Task #1
-- [ ] Task #2
+## Foot Notes
+
+Happy trees are happy [^1]
+
+## Footer
+
+[^1]: By Bob Ross
