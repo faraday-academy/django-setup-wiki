@@ -1,0 +1,24 @@
+{
+  "name": "django-setup-wiki",
+  "version": "1.0.0",
+  "description": "Instructions for setting up Django projects.",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faraday-academy/django-setup-wiki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faraday-academy/django-setup-wiki/issues"
+  },
+  "homepage": "https://github.com/faraday-academy/django-setup-wiki#readme",
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.26",
+    "vuepress": "^2.0.0-beta.26"
+  }
+}
