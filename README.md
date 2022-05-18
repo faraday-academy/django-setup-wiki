@@ -50,7 +50,7 @@ class UserAdmin(admin.ModelAdmin):
     list_display = ('email', 'is_admin')
 
 
-admin.site.register(User, UserAdmin
+admin.site.register(User, UserAdmin)
 ```
 
 ### Database Setup
