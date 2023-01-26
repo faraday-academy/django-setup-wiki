@@ -26,7 +26,7 @@ Instructions for setting up Django projects.
 1. Create a virtual environment: `python -m venv venv`
 1. Go into your virtual environment: `source venv/bin/activate`
 1. Run `poetry init` -> This will create a TOML file for you with your project config where Poetry will add your dependencies
-1. Install `psycopg2-binary`: `poetry add psycopg2`
+1. Install `psycopg2-binary`: `poetry add psycopg2-binary`
 1. Rename the [projectname] folder to config
 
 1. Create a folder named `apps`
