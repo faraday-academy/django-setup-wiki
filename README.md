@@ -36,7 +36,8 @@ Instructions for setting up Django projects.
 
 1. Create a `users` app: `mkdir apps/users` and then `python manage.py startapp users apps/users`
 2. Make sure you add `apps.users` to installed apps in the settings.py file
-3. Setup custom User model and custom user manager: https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
+3. Also, if you are using an `apps` folder as I recommend in this wiki, you will need to change the name of every Django app in the apps.py file: e.g. from `name = users` to `name = apps.users`
+4. Setup custom User model and custom user manager: https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
 ```py
 AUTH_USER_MODEL = 'users.User'
 ```
