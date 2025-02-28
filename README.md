@@ -14,30 +14,30 @@ Instructions for setting up Django projects.
 
 ### Recommended Technologies
 
-- Django 3.x
+- Django 5.x
 - [Poetry](https://python-poetry.org/docs/cli/#install)
 - Postgres: You can use MySQL or SQL Lite, but Postgres is recommended by the Django official docs. The only exception is if you want to use MongoDB or another NoSQL database with your project. You can find [details for that below](#django-mongodb).
 
 ### Initial Setup
 
-1. Must have Python 3, [Django]((https://docs.djangoproject.com/en/3.1/topics/install)), and Postgres version 12.x installed
+1. Must have Python 3, [Django]((https://docs.djangoproject.com/en/3.1/topics/install)), and Postgres version 15.x installed
 1. Make sure Postgres is running on your machine
 1. `django-admin startproject [projectname]`
-1. Create a virtual environment: `python -m venv venv`
-1. Go into your virtual environment: `source venv/bin/activate`
+1. Use Poetry's built-in environment or go ahead and create a new virtual environment: `python -m venv venv`
+1. Go into your virtual environment: `source venv/bin/activate` (not necessary if you are using Poetry)
 1. Run `poetry init` -> This will create a TOML file for you with your project config where Poetry will add your dependencies
 1. Install `psycopg2-binary`: `poetry add psycopg2-binary`
 1. Rename the [projectname] folder to config
 
 1. Create a folder named `apps`
-1. Create an `__init__.py` file inside of the `apps` folder
+1. Create an `__init__.py` file inside of the `apps` folder (not required for Python 3.8+ but some libraries, like Pytest, still require it)
 
 ### Users Setup
 
 1. Create a `users` app: `mkdir apps/users` and then `python manage.py startapp users apps/users`
 2. Make sure you add `apps.users` to installed apps in the settings.py file
 3. Also, if you are using an `apps` folder as I recommend in this wiki, you will need to change the name of every Django app in the apps.py file: e.g. from `name = users` to `name = apps.users`
-4. Setup custom User model and custom user manager: https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
+4. Setup custom User model and custom user manager: [https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example](https://docs.djangoproject.com/en/5.1/topics/auth/customizing/#a-full-example)
 ```py
 AUTH_USER_MODEL = 'users.User'
 ```
